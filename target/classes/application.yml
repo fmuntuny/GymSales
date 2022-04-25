@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/shoppingcart
+    username: root
+    password: 123456
+    driver-class: com.mysql.jdbc.Driver
+    initialization-mode: never
+cloud:
+  aws:
+    credentials:
+      accessKey:
+      secretKey:
+    region:
+      static:
+application:
+  bucket:
+    name:
